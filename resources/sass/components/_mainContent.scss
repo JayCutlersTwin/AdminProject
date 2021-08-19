@@ -1,0 +1,60 @@
+@import '../colors';
+
+@mixin holder {
+    border: 3px solid $AMUpperDark;
+    border-radius: 5px;
+    background-color: $AMUpperLight;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-content {
+    display: block;
+    .welcomeSection {
+        display: block;
+        .container {
+            .welcomeDiv {
+                @include holder;
+                h4 {
+                    color: $AMoffWhite;
+                }
+            }
+        }
+    }
+    .fakeNewsSection {
+        display: block;
+        .container {
+            .fakeNewsHolder {
+                @include holder;
+                .container {
+                    .content {
+                        color: $AMoffWhite;
+                        .contentImage {
+                            border: 2px solid $AMUpperDark;
+                            width: 600px;
+                            margin: auto;
+                            img {
+                                width: 100%;
+                                vertical-align: bottom;
+                                margin: 0px;
+                                padding: 0px;
+                            }
+                        }
+                        .newsTitle {
+                            a{
+                                text-decoration: none;
+                                color: $AMoffWhite;
+                            }
+                        }
+                        .newsDescription {
+
+                        }
+                        .newsPublished {
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

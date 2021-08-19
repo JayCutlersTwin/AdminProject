@@ -1,0 +1,232 @@
+.navBarMain {
+  display: block;
+  width: 100%;
+  background-color: #afafb7;
+  padding: 20px;
+}
+.navBarMain .navBarMainDiv {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.navBarMain .navBarMainDiv .menu nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+}
+.navBarMain .navBarMainDiv .menu nav a {
+  text-decoration: none;
+  color: #058dc9;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 20px;
+}
+.navBarMain .navBarMainDiv .registrationButtons {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: arial;
+  background-color: #f0f0f8;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0px 20px;
+}
+
+.main-content {
+  display: block;
+}
+.main-content .welcomeSection {
+  display: block;
+}
+.main-content .welcomeSection .container .welcomeDiv {
+  border: 3px solid #79064b;
+  border-radius: 5px;
+  background-color: #c8697c;
+  text-align: center;
+  margin-top: 20px;
+}
+.main-content .welcomeSection .container .welcomeDiv h4 {
+  color: #f0f0f8;
+}
+.main-content .fakeNewsSection {
+  display: block;
+}
+.main-content .fakeNewsSection .container .fakeNewsHolder {
+  border: 3px solid #79064b;
+  border-radius: 5px;
+  background-color: #c8697c;
+  text-align: center;
+  margin-top: 20px;
+}
+.main-content .fakeNewsSection .container .fakeNewsHolder .container .content {
+  color: #f0f0f8;
+}
+.main-content .fakeNewsSection .container .fakeNewsHolder .container .content .contentImage {
+  border: 2px solid #79064b;
+  width: 600px;
+  margin: auto;
+}
+.main-content .fakeNewsSection .container .fakeNewsHolder .container .content .contentImage img {
+  width: 100%;
+  vertical-align: bottom;
+  margin: 0px;
+  padding: 0px;
+}
+.main-content .fakeNewsSection .container .fakeNewsHolder .container .content .newsTitle a {
+  text-decoration: none;
+  color: #f0f0f8;
+}
+.main-content .fakeNewsSection .container .fakeNewsHolder .container .content .newsPublished {
+  font-style: italic;
+}
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+  background-color: #0b1b33;
+  color: #e5e9ea;
+}
+
+.mainSection .container h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.mainSection .container .databaseDiv {
+  overflow: auto;
+  padding: 20px;
+}
+.mainSection .container .databaseDiv .databaseTable {
+  text-align: center;
+}
+.mainSection .container .databaseDiv .databaseTable table {
+  margin: auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.mainSection .container .databaseDiv .databaseTable table thead tr {
+  background-color: #e5e9ea;
+  color: #0b1b33;
+}
+.mainSection .container .databaseDiv .databaseTable table thead tr th {
+  padding: 10px;
+}
+.mainSection .container .databaseDiv .databaseTable table tbody tr {
+  border-bottom: thin solid #000000;
+}
+.mainSection .container .databaseDiv .databaseTable table tbody tr a {
+  text-decoration: none;
+}
+.mainSection .container .databaseDiv .databaseTable table tbody tr:nth-of-type(odd) {
+  background-color: #0b1b33;
+  color: #e5e9ea;
+}
+.mainSection .container .databaseDiv .databaseTable table tbody tr:nth-of-type(odd) a {
+  color: #e5e9ea;
+}
+.mainSection .container .databaseDiv .databaseTable table tbody tr:nth-of-type(even) {
+  background-color: #e5e9ea;
+  color: #0b1b33;
+}
+.mainSection .container .databaseDiv .databaseTable table tbody tr:nth-of-type(even) a {
+  color: #0b1b33;
+}
+.mainSection .container .databaseDiv .databaseTable table tbody tr td {
+  padding: 10px;
+  text-align: center;
+}
+.mainSection .container .databaseDiv .databaseTable nav {
+  margin: auto;
+}
+.mainSection .container .databaseDiv .databaseTable nav div div span svg {
+  display: none;
+}
+
+.modalLogin {
+  position: fixed;
+  top: calc(50% - (600px /2));
+  left: calc(50% - (600px /2));
+}
+.modalLogin .modalContainer {
+  display: block;
+  height: 600px;
+  width: 600px;
+  overflow-y: auto;
+  background-color: #c8697c;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0px 0px 10px black;
+  overflow-x: hidden;
+}
+.modalLogin .modalContainer .modalInnerContainer {
+  position: relative;
+  top: calc(50% - (419px /2));
+  text-align: center;
+}
+.modalLogin .modalContainer .modalInnerContainer h1 {
+  margin-top: 0px;
+  font-size: 3em;
+}
+.modalLogin .modalContainer .modalInnerContainer h6 a {
+  margin: 10px 0px;
+  text-decoration: none;
+  color: black;
+}
+.modalLogin .modalContainer .modalInnerContainer .loginForm .alertDiv {
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  width: 400px;
+  display: block;
+  background-color: #f4596d;
+  color: #e5e9ea;
+}
+.modalLogin .modalContainer .modalInnerContainer .loginForm span {
+  margin: 10px 0px;
+  display: block;
+}
+.modalLogin .modalContainer .modalInnerContainer .loginForm input {
+  font-size: 20px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: 2px solid #79064b;
+  margin-top: 20px;
+  width: 400px;
+}
+.modalLogin .modalContainer .modalInnerContainer .loginForm input:focus {
+  border: 2px solid #afafb7;
+  outline: none;
+}
+.modalLogin .modalContainer .modalInnerContainer .loginForm button {
+  display: block;
+  padding: 20px 30px;
+  font-size: 20px;
+  background-color: #79064b;
+  color: #f0f0f8;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  left: calc(50% - (122px /2));
+}
+.modalLogin .modalContainer .modalInnerContainer .loginForm button:focus {
+  background-color: #6d6d79;
+  color: black;
+}

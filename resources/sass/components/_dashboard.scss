@@ -1,0 +1,67 @@
+@import "../_colors";
+
+@mixin maincontent {
+
+}
+
+.mainSection {
+    .container {
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .databaseDiv {
+            overflow: auto;
+            padding: 20px;
+            .databaseTable {
+                text-align: center;
+                table {
+                    margin: auto;
+                    border-collapse: collapse;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                    thead {
+                        tr {
+                            background-color: $AMLowerLight;
+                            color: $AMLowerDark;
+                            th {
+                                padding: 10px;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            border-bottom: thin solid #000000;
+                            a {
+                                text-decoration: none;
+                            }
+                            &:nth-of-type(odd) {
+                                background-color: $AMLowerDark;
+                                color: $AMLowerLight;
+                                a {
+                                    color: $AMLowerLight;
+                                }
+                            }
+                            &:nth-of-type(even) {
+                                background-color: $AMLowerLight;
+                                color: $AMLowerDark;
+                                a {
+                                    color: $AMLowerDark;
+                                }
+                            }
+                            td {
+                                padding: 10px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                nav {
+                    margin: auto;
+                    div div span svg {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

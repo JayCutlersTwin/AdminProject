@@ -1,0 +1,18 @@
+@import '../_colors';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: arial;
+    background-color: $AMoffWhite;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0px 20px;
+}
