@@ -9,7 +9,7 @@
         height: 600px;
         width: 600px;
         overflow-y: auto;
-        background-color: $AMUpperLight;
+        background-color: $AMLowerLight;
         border-radius: 12px;
         position: relative;
         box-shadow: 0px 0px 10px black;
@@ -47,11 +47,11 @@
                     font-size: 20px;
                     padding: 20px 10px;
                     border-radius: 5px;
-                    border: 2px solid $AMUpperDark;
+                    border: 2px solid $AMLowerDark;
                     margin-top: 20px;
                     width: 400px;
                     &:focus {
-                        border: 2px solid $SecondaryColor;
+                        border: 2px solid $AMswoosh;
                         outline: none;
                     }
                 }
@@ -60,7 +60,7 @@
                     display: block;
                     padding: 20px 30px;
                     font-size: 20px;
-                    background-color: $AMUpperDark;
+                    background-color: $AMLowerDark;
                     color: $AMoffWhite;
                     border: none;
                     border-radius: 5px;

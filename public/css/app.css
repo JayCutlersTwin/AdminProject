@@ -207,7 +207,7 @@ footer {
   height: 600px;
   width: 600px;
   overflow-y: auto;
-  background-color: #c8697c;
+  background-color: #e5e9ea;
   border-radius: 12px;
   position: relative;
   box-shadow: 0px 0px 10px black;
@@ -246,12 +246,12 @@ footer {
   font-size: 20px;
   padding: 20px 10px;
   border-radius: 5px;
-  border: 2px solid #79064b;
+  border: 2px solid #0b1b33;
   margin-top: 20px;
   width: 400px;
 }
 .modalLogin .modalContainer .modalInnerContainer .loginForm input:focus {
-  border: 2px solid #afafb7;
+  border: 2px solid #058dc9;
   outline: none;
 }
 .modalLogin .modalContainer .modalInnerContainer .loginForm button {
@@ -259,7 +259,7 @@ footer {
   display: block;
   padding: 20px 30px;
   font-size: 20px;
-  background-color: #79064b;
+  background-color: #0b1b33;
   color: #f0f0f8;
   border: none;
   border-radius: 5px;
