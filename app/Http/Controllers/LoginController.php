@@ -31,7 +31,7 @@ class LoginController extends Controller
             //check password
             if($request->password == $userInfo->password) {
                 $request->session()->put('LoggedUser', $userInfo->name);
-                return redirect('/index');
+                return redirect('/');
             } else {
                 return back()->with('fail','Incorrect password');
             }
