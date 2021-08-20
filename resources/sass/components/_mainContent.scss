@@ -1,11 +1,12 @@
 @import '../colors';
 
 @mixin holder {
-    border: 3px solid $AMUpperDark;
+    border: 3px solid $AMLowerDark;
     border-radius: 5px;
-    background-color: $AMUpperLight;
+    background-color: $AMLowerLight;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
 
 .main-content {
@@ -16,7 +17,7 @@
             .welcomeDiv {
                 @include holder;
                 h4 {
-                    color: $AMoffWhite;
+                    color: $AMLowerDark;
                 }
             }
         }
@@ -26,11 +27,12 @@
         .container {
             .fakeNewsHolder {
                 @include holder;
+                margin-bottom: 40px;
                 .container {
                     .content {
-                        color: $AMoffWhite;
+                        color: $AMLowerDark;
                         .contentImage {
-                            border: 2px solid $AMUpperDark;
+                            border: 2px solid $AMLowerDark;
                             width: 600px;
                             margin: auto;
                             img {
@@ -43,7 +45,7 @@
                         .newsTitle {
                             a{
                                 text-decoration: none;
-                                color: $AMoffWhite;
+                                color: $AMLowerDark;
                             }
                         }
                         .newsDescription {

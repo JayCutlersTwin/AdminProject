@@ -1,0 +1,42 @@
+@import "../colors";
+.createSection {
+    h1 {
+        text-align: center;
+        margin: 50px 0px;
+    }
+    .createDiv {
+        margin: auto;
+        margin-top: 10px;
+        background-color: $AMLowerLight;
+        width: 50%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+        margin-bottom: 102px;
+        .container{
+            .create {
+                display: flex;
+                flex-direction: column;
+                label {
+                    margin-top: 20px;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                input {
+                    padding: 15px;
+                }
+                select {
+                    padding: 15px;
+                }
+                .inputText {
+                    padding: 15px;
+                }
+                .inputFile {}
+                .inputSelect {}
+                button {
+                    margin: 15px 10px;
+                    width: 100px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

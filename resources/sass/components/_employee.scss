@@ -1,0 +1,33 @@
+@import "../_colors";
+
+.SingleEmployeeSection {
+    text-align: center;
+    min-height: 70vh;
+    .container {
+        .EmployeeName {
+            h1 {
+                margin: 50px 0px;
+            }
+        }
+        .EmployeeContactDiv {
+            margin: auto;
+            background-color: $AMLowerLight;
+            overflow: hidden;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+            .container {
+                h4 {
+                    color: $AMLowerDark;
+                    margin: 50px 0px;
+                }
+                h6 {
+                    color: $AMLowerDark;
+                    margin: 25px 0px;
+                }
+            }
+        }
+    }
+}

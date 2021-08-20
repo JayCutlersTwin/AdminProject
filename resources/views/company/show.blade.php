@@ -2,16 +2,16 @@
 
 @section('content')
 
-<a href="/index">Go Back</a>
+<a class="GoBackLink" href="/index">Go Back</a>
 
-<section class="mainSection">
+<section class="mainSection" id="ShowCompanySECTION">
     <div class="container">
         <div class="showCompanyDisplay">
             <h1>{{ $company->name }}</h1>
         </div>
         <div class="databaseDiv">
-            <h1>Employees</h1>
-            <a href="/employee/create">add employee to company</a>
+            <!-- <h2>Employees</h2> -->
+
             <div class="databaseTable">
                 <table>
                     <thead>
@@ -20,24 +20,23 @@
                             <th>Company</th>
                             <th>Employee Email</th>
                             <th>Employee Phone Number</th>
-                            <th></th>
-                            <th></th>
+                            <th colspan="2"><a class="btn btn-success" href="/employee/create">Add</a></th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($employees as $employee)
                             <tr>
-                                <td><a href="/showEmployee/{{ $employee->id }}">{{ $employee->firstname }} {{ $employee->lastname }}</a></td>
+                                <td><a class="linkMe" href="/showEmployee/{{ $employee->id }}">{{ $employee->firstname }} {{ $employee->lastname }}</a></td>
                                 <td>{{ $company->name }}</td>
                                 <td>{{ $employee->email }}</td>
                                 <td>{{ $employee->phone }}</td>
-                                <td><a class="editBtn" href="/showEmployee/{{ $employee->id }}/edit">Edit</a></td>
+                                <td><a class="btn btn-primary" href="/showEmployee/{{ $employee->id }}/edit">Edit</a></td>
                                 <td>
                                     <form method="POST" action="/showEmployee/{{ $employee->id }}">
                                         @csrf
                                         @method('DELETE')
 
-                                        <button class="DeleteBtn">Delete</button>
+                                        <button class="btn btn-danger">Delete</button>
                                     </form>
                                 </td>
                             </tr>

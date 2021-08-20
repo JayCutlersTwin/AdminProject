@@ -1,8 +1,9 @@
 .navBarMain {
   display: block;
   width: 100%;
-  background-color: #afafb7;
+  background-color: #e5e9ea;
   padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
 .navBarMain .navBarMainDiv {
   display: flex;
@@ -20,6 +21,7 @@
   color: #058dc9;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 30px;
   margin: 20px;
 }
 .navBarMain .navBarMainDiv .registrationButtons {
@@ -46,6 +48,18 @@ body {
   margin: 0px 20px;
 }
 
+.GoBackLink {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #0b1b33;
+}
+.GoBackLink:hover {
+  text-decoration: underline;
+}
+
 .main-content {
   display: block;
 }
@@ -53,30 +67,33 @@ body {
   display: block;
 }
 .main-content .welcomeSection .container .welcomeDiv {
-  border: 3px solid #79064b;
+  border: 3px solid #0b1b33;
   border-radius: 5px;
-  background-color: #c8697c;
+  background-color: #e5e9ea;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
 .main-content .welcomeSection .container .welcomeDiv h4 {
-  color: #f0f0f8;
+  color: #0b1b33;
 }
 .main-content .fakeNewsSection {
   display: block;
 }
 .main-content .fakeNewsSection .container .fakeNewsHolder {
-  border: 3px solid #79064b;
+  border: 3px solid #0b1b33;
   border-radius: 5px;
-  background-color: #c8697c;
+  background-color: #e5e9ea;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  margin-bottom: 40px;
 }
 .main-content .fakeNewsSection .container .fakeNewsHolder .container .content {
-  color: #f0f0f8;
+  color: #0b1b33;
 }
 .main-content .fakeNewsSection .container .fakeNewsHolder .container .content .contentImage {
-  border: 2px solid #79064b;
+  border: 2px solid #0b1b33;
   width: 600px;
   margin: auto;
 }
@@ -88,27 +105,37 @@ body {
 }
 .main-content .fakeNewsSection .container .fakeNewsHolder .container .content .newsTitle a {
   text-decoration: none;
-  color: #f0f0f8;
+  color: #0b1b33;
 }
 .main-content .fakeNewsSection .container .fakeNewsHolder .container .content .newsPublished {
   font-style: italic;
 }
 
 footer {
+  display: block;
+  position: relative;
   margin-top: 20px;
   width: 100%;
   padding: 20px;
+  height: 100px;
+  text-align: center;
   background-color: #0b1b33;
   color: #e5e9ea;
+  bottom: 0px;
 }
 
 .mainSection .container h1 {
   text-align: center;
   text-transform: uppercase;
+  margin: 50px;
 }
 .mainSection .container .databaseDiv {
   overflow: auto;
   padding: 20px;
+}
+.mainSection .container .databaseDiv h2 {
+  text-align: center;
+  text-transform: uppercase;
 }
 .mainSection .container .databaseDiv .databaseTable {
   text-align: center;
@@ -116,7 +143,7 @@ footer {
 .mainSection .container .databaseDiv .databaseTable table {
   margin: auto;
   border-collapse: collapse;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
 }
 .mainSection .container .databaseDiv .databaseTable table thead tr {
   background-color: #e5e9ea;
@@ -145,15 +172,29 @@ footer {
 .mainSection .container .databaseDiv .databaseTable table tbody tr:nth-of-type(even) a {
   color: #0b1b33;
 }
+.mainSection .container .databaseDiv .databaseTable table tbody tr:nth-of-type(even) .btn {
+  color: #e5e9ea;
+}
 .mainSection .container .databaseDiv .databaseTable table tbody tr td {
   padding: 10px;
   text-align: center;
 }
+.mainSection .container .databaseDiv .databaseTable table tbody tr .linkMe:hover {
+  text-decoration: underline;
+}
 .mainSection .container .databaseDiv .databaseTable nav {
   margin: auto;
+  margin-top: 50px;
+}
+.mainSection .container .databaseDiv .databaseTable nav div {
+  margin-top: 15px;
 }
 .mainSection .container .databaseDiv .databaseTable nav div div span svg {
   display: none;
+}
+
+#ShowCompanySECTION {
+  min-height: 70vh;
 }
 
 .modalLogin {
@@ -214,6 +255,7 @@ footer {
   outline: none;
 }
 .modalLogin .modalContainer .modalInnerContainer .loginForm button {
+  cursor: pointer;
   display: block;
   padding: 20px 30px;
   font-size: 20px;
@@ -229,4 +271,66 @@ footer {
 .modalLogin .modalContainer .modalInnerContainer .loginForm button:focus {
   background-color: #6d6d79;
   color: black;
+}
+
+.createSection h1 {
+  text-align: center;
+  margin: 50px 0px;
+}
+.createSection .createDiv {
+  margin: auto;
+  margin-top: 10px;
+  background-color: #e5e9ea;
+  width: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  margin-bottom: 102px;
+}
+.createSection .createDiv .container .create {
+  display: flex;
+  flex-direction: column;
+}
+.createSection .createDiv .container .create label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.createSection .createDiv .container .create input {
+  padding: 15px;
+}
+.createSection .createDiv .container .create select {
+  padding: 15px;
+}
+.createSection .createDiv .container .create .inputText {
+  padding: 15px;
+}
+.createSection .createDiv .container .create button {
+  margin: 15px 10px;
+  width: 100px;
+  align-self: center;
+}
+
+.SingleEmployeeSection {
+  text-align: center;
+  min-height: 70vh;
+}
+.SingleEmployeeSection .container .EmployeeName h1 {
+  margin: 50px 0px;
+}
+.SingleEmployeeSection .container .EmployeeContactDiv {
+  margin: auto;
+  background-color: #e5e9ea;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+.SingleEmployeeSection .container .EmployeeContactDiv .container h4 {
+  color: #0b1b33;
+  margin: 50px 0px;
+}
+.SingleEmployeeSection .container .EmployeeContactDiv .container h6 {
+  color: #0b1b33;
+  margin: 25px 0px;
 }

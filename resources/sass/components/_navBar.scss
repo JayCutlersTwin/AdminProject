@@ -3,8 +3,9 @@
 .navBarMain {
     display: block;
     width: 100%;
-    background-color: $AMGrey;
+    background-color: $AMLowerLight;
     padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
     .navBarMainDiv{
         display: flex;
         position: relative;
@@ -23,6 +24,7 @@
                     color: $AMswoosh;
                     text-transform: uppercase;
                     font-weight: 600;
+                    font-size: 30px;
                     margin: 20px;
                 }
             }

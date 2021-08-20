@@ -2,9 +2,14 @@
 
 
 footer {
+    display: block;
+    position: relative;
     margin-top: 20px;
     width: 100%;
     padding: 20px;
+    height: 100px;
+    text-align: center;
     background-color: $AMLowerDark;
     color: $AMLowerLight;
+    bottom: 0px;
 }

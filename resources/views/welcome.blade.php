@@ -30,7 +30,7 @@
                                 foreach ($newsData->articles as $news) {
                             ?>
                             <div class="contentImage">
-                                <img src="<?php echo $news->urlToImage ?>" alt="">
+                                <img src="<?php echo $news->urlToImage ?>" alt="News Article Image">
                             </div>
                             <h3 class="newsTitle"><a href="<?php echo $news->url ?>"><?php echo $news->title ?></a></h3>
                             <p class="newsDescription"><?php echo $news->description ?></p>

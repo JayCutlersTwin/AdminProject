@@ -9,16 +9,21 @@
         h1 {
             text-align: center;
             text-transform: uppercase;
+            margin: 50px;
         }
         .databaseDiv {
             overflow: auto;
             padding: 20px;
+            h2 {
+                text-align: center;
+                text-transform: uppercase;
+            }
             .databaseTable {
                 text-align: center;
                 table {
                     margin: auto;
                     border-collapse: collapse;
-                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
                     thead {
                         tr {
                             background-color: $AMLowerLight;
@@ -47,16 +52,26 @@
                                 a {
                                     color: $AMLowerDark;
                                 }
+                                .btn {
+                                    color: $AMLowerLight;
+                                }
                             }
                             td {
                                 padding: 10px;
                                 text-align: center;
+                            }
+                            .linkMe:hover {
+                                text-decoration: underline;
                             }
                         }
                     }
                 }
                 nav {
                     margin: auto;
+                    margin-top: 50px;
+                    div {
+                        margin-top: 15px;
+                    }
                     div div span svg {
                         display: none;
                     }
@@ -64,4 +79,8 @@
             }
         }
     }
+}
+
+#ShowCompanySECTION {
+    min-height: 70vh;
 }

@@ -12,4 +12,6 @@ class Company extends Model
     public function employees(){
         $this->hasMany(Empolyee::class);
     }
+
+    protected $fillable = ['name', 'email', 'image', 'websiteAddress' ];
 }
